@@ -11,8 +11,17 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hola Usfa!</h1>
-    <button class="btn btn-primary">Ingresar al sistema</button>
+    <div class="container">
+      <h1>Hola Usfa!</h1>
+      <button class="btn btn-primary">Ingresar al sistema</button>
+      <h2>Pasos para subir un repositorio a Github</h2>
+      <ul>
+        <li>git add .</li>
+        <li>git commit -m "Mensaje de commit"</li>
+        <li>git push</li>
+      </ul>
+    </div>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
