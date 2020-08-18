@@ -42,8 +42,11 @@ Route::get('bootstrap', function() {
     return view('bootstrap');
 });
 
-Route::get('solicitud', function() {
-    return view('solicitud');
-});
+// Route::get('solicitud', function() {
+//     return view('solicitud');
+// });
 
+Route::get('solicitud', 'SolicitudController@solicitud');
+
+Route::post('recepcionsolicitud', ['as' => 'solicitud.recepcion', 'uses' => 'SolicitudController@recepcionsolicitud']);
 

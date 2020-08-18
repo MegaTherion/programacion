@@ -14,25 +14,9 @@
   <body>
 
     <div class="container">
-      <h1>Solicitud de material</h1>
+      <h1>Gracias</h1>
       
-      <form action="{{ route('solicitud.recepcion') }}" method="post">
-        @csrf
-        <div class="form-group">
-            <label for="nombrecompleto">Nombre completo</label>
-            <input class="form-control" type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Coloca tu nombre completo">
-        </div>
-        <div class="form-group">
-            <label for="material">Material</label>
-            <input type="text" class="form-control" name="material" id="material" placeholder="Especifique el material">
-        </div>
-        <div class="form-group">
-            <label for="cantidad">Cantidad</label>
-            <input class="form-control" type="number" name="cantidad" id="cantidad" placeholder="Especifique la cantidad">
-        </div>
-        <button class="btn btn-primary">Solicitar</button>
-      </form>
-
+      
     </div>
     
 
