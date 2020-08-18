@@ -8,11 +8,19 @@ use Illuminate\Http\Request;
 
 class SolicitudController extends Controller
 {
+
+    private $nombreEmpresa = 'TUXNIR';
+
     public function solicitud() {
         return view('solicitud');
     }
 
     public function recepcionsolicitud(Request $request) {
-        return view('recepcionsolicitud');
+        return view('recepcionsolicitud', [
+            'empresa'=>$this->nombreEmpresa,
+            'nombre'=>$request->input('nombrecompleto'),
+            'material'=>$request->input('material'),
+            'cantidad'=>$request->input('cantidad'),
+        ]);
     }
 }

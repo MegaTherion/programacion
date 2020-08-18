@@ -50,3 +50,7 @@ Route::get('solicitud', 'SolicitudController@solicitud');
 
 Route::post('recepcionsolicitud', ['as' => 'solicitud.recepcion', 'uses' => 'SolicitudController@recepcionsolicitud']);
 
+Route::get('ecuacion', 'EcuacionController@ecuacion');
+
+Route::post('solucion', ['as' => 'ecuacion.solucion', 'uses' => 'EcuacionController@solucion']);
+

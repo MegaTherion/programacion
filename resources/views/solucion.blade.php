@@ -8,17 +8,23 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Solicitud de material</title>
+    <title>Ecuación de 2do. grado</title>
     
   </head>
   <body>
 
     <div class="container">
-      <h1 class="pull-left">Gracias</h1>
-      <div class="pull-right"><h2>{{ $empresa }}</h2></div>
-       <p>Muchas gracias {{ $nombre }}</p>
-       <p>Usted solicitó {{ $cantidad }} unidades de {{ $material }}</p>
+      <h1>Solución Ecuación de 2do. grado</h1>
       
+      <p>A: {{ $a }}</p>
+      <p>B: {{ $b }}</p>
+      <p>C: {{ $c }}</p>
+        @if ($raicesimaginarias == false)
+        <h4>Raiz 1: <span class="text-primary">{{ $r1 }}</span> </h4>
+        <h4>Raiz 2: <span class="text-primary">{{ $r2 }}</span> </h4>
+        @else 
+        <h4 class="text-danger">No tiene raíces reales</h4>
+        @endif
     </div>
     
 
